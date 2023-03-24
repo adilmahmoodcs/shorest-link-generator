@@ -3,6 +3,6 @@ class FetchUrlTitleJob < ApplicationJob
 
   def perform(id)
     short_link = ShortLink.find(id)
-    short_link.update(title: FetchUrlTitleService.new(short_link.original_url).fetch)
+    short_link.update(title: FetchUrlTitle.new(short_link.original_url).fetch)
   end
 end

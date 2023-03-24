@@ -1,5 +1,5 @@
 require 'open-uri'
-class FetchUrlTitleService
+class FetchUrlTitle
   def initialize(url)
     @url = url
   end

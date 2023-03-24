@@ -101,7 +101,7 @@ To check the documentation, You can visit /api path.
 
 For generate the new shortest link, use the following curl command
 ```
-curl --request POST '<HOST_BASE_URL>/api/v1/short_links' --data '{ "original_url" : "www.google.com" }'
+curl --request POST '<HOST_BASE_URL>/api/v1/short_links' --data '{ "original_url" : "https://google.com" }'
 ```
 For get the list of top 100 most frequently accessed URLs, use the following curl command
 ```
